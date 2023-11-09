@@ -1,0 +1,14 @@
+@import "_reset";
+.top{
+    display: flex;
+    justify-content: space-around;
+    // a{
+    //     // color:$color_blue;
+    // }
+    .menu{
+        display: flex;
+    }
+    .social{
+        display: flex;
+    }
+}
