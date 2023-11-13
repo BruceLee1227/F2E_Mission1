@@ -1,14 +1,45 @@
 @import "_reset";
 .top{
     display: flex;
-    justify-content: space-around;
-    // a{
-    //     // color:$color_blue;
-    // }
+    justify-content: space-between;
+    align-items: center;
+    font-family: 20px;
+    
     .menu{
         display: flex;
+        li{
+            margin-right: 30px;
+        }
+        a{
+            color: $text;
+            font-size: 20px;
+            font-weight: bold;
+        }
     }
     .social{
         display: flex;
     }
 }
+.main{
+    background-image: url(../imgs/bg-blue1.jpg);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    &-text,&-img{
+        width: 50%;
+    }
+    h1,h2{
+        line-height: 140%;
+        color: $text;
+    }
+    h1{
+        font-size: 64px;
+    }
+    h2{
+        font-size: 58px;
+    }
+}
+

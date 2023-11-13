@@ -1,10 +1,11 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: Noto Sans TC;
+  font-family: 思源黑體;
 }
 
 a {
@@ -15,13 +16,53 @@ li {
   list-style: none;
 }
 
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
 .top {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 20px;
 }
 .top .menu {
   display: flex;
 }
+.top .menu li {
+  margin-right: 30px;
+}
+.top .menu a {
+  color: #123749;
+  font-size: 20px;
+  font-weight: bold;
+}
 .top .social {
   display: flex;
+}
+
+.main {
+  background-image: url(../imgs/bg-blue1.jpg);
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+.banner-text, .banner-img {
+  width: 50%;
+}
+.banner h1, .banner h2 {
+  line-height: 140%;
+  color: #123749;
+}
+.banner h1 {
+  font-size: 64px;
+}
+.banner h2 {
+  font-size: 58px;
 }

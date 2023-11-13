@@ -4,13 +4,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: Noto Sans TC;
+    font-family: 思源黑體;
 }
 a{
     text-decoration: none;
 }
 li{
     list-style: none;
+}
+.container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
 }
 // 顏色
 $primary:#7ba9d9;
