@@ -1,14 +1,20 @@
 @import "_reset";
+body{
+    height: 1000px;
+}
 .top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 20px;
-    
     .menu{
         display: flex;
         li{
+            padding: 10px 20px;
             margin-right: 30px;
+            &:last-child{
+                margin-right: 0;
+            }
         }
         a{
             color: $text;
@@ -27,19 +33,60 @@
 }
 .banner{
     display: flex;
+    justify-content: center;
     align-items: center;
-    &-text,&-img{
-        width: 50%;
-    }
-    h1,h2{
-        line-height: 140%;
-        color: $text;
-    }
-    h1{
-        font-size: 64px;
-    }
-    h2{
-        font-size: 58px;
+    // &-text,&-img{
+    //     width: 50%;
+    // }
+    &-text{
+        h1{
+            color: $text;
+            font-size: 64px;
+            font-weight: bold;
+            line-height: 140%;
+        }
     }
 }
-
+.advocate{
+    &-content{
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .content-wrap{
+        display: flex;
+        width: 100%;
+        >div{
+            width: 50%;
+            padding: 20px;
+        }
+    }
+    h2{
+        margin-bottom: 15px;
+    }
+    a{
+        background-color: $text;
+        color:$neutral3;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-bottom: 35px;
+    }
+    p{
+        margin-bottom: 10px;
+    }
+    &-img{
+        background-image: url(../imgs/sunglass_cat.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        // width: 500px;
+        // height: 500px;
+        border-radius: 100%;
+        margin: 0 auto;
+    }
+    .text{
+        background-color: $text;
+        color: $neutral3;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+}

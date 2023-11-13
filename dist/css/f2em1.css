@@ -1,11 +1,9 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 思源黑體;
 }
 
 a {
@@ -22,6 +20,10 @@ li {
   margin: auto;
 }
 
+body {
+  height: 1000px;
+}
+
 .top {
   display: flex;
   justify-content: space-between;
@@ -32,7 +34,11 @@ li {
   display: flex;
 }
 .top .menu li {
+  padding: 10px 20px;
   margin-right: 30px;
+}
+.top .menu li:last-child {
+  margin-right: 0;
 }
 .top .menu a {
   color: #123749;
@@ -51,18 +57,52 @@ li {
 
 .banner {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
-.banner-text, .banner-img {
-  width: 50%;
-}
-.banner h1, .banner h2 {
-  line-height: 140%;
+.banner-text h1 {
   color: #123749;
-}
-.banner h1 {
   font-size: 64px;
+  font-weight: bold;
+  line-height: 140%;
 }
-.banner h2 {
-  font-size: 58px;
+
+.advocate-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.advocate .content-wrap {
+  display: flex;
+  width: 100%;
+}
+.advocate .content-wrap > div {
+  width: 50%;
+  padding: 20px;
+}
+.advocate h2 {
+  margin-bottom: 15px;
+}
+.advocate a {
+  background-color: #123749;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 35px;
+}
+.advocate p {
+  margin-bottom: 10px;
+}
+.advocate-img {
+  background-image: url(../imgs/sunglass_cat.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.advocate .text {
+  background-color: #123749;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
