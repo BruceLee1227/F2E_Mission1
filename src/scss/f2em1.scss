@@ -33,18 +33,21 @@ body{
         display: flex;
     }
 }
-.main{
-    background-image: url(../imgs/bg-blue1.jpg);
-    background-position: bottom;
-    background-repeat: repeat-x;
-}
 .banner{
     display: flex;
     justify-content: center;
     align-items: center;
-    // &-text,&-img{
-    //     width: 50%;
-    // }
+    background-image: url(../imgs/bg-blue1.jpg);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        >div{
+            width: 50%;
+        }
+    }
     &-text{
         h1{
             color: $text;

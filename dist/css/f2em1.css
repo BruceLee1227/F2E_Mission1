@@ -55,16 +55,21 @@ body {
   display: flex;
 }
 
-.main {
-  background-image: url(../imgs/bg-blue1.jpg);
-  background-position: bottom;
-  background-repeat: repeat-x;
-}
-
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../imgs/bg-blue1.jpg);
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-content > div {
+  width: 50%;
 }
 .banner-text h1 {
   color: #123749;
