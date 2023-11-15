@@ -58,7 +58,7 @@ body{
     }
 }
 .advocate{
-    border: 1px solid black;
+    background-color: $neutral2;
     &-content{
         display: flex;
         align-items: center;
@@ -66,14 +66,15 @@ body{
     }
     .content-wrap{
         display: flex;
-        width: 100%;
         >div{
             width: 50%;
             padding: 20px;
         }
     }
     h2{
+        font-size: 40px;
         margin-bottom: 15px;
+        color: $text;
     }
     a{
         background-color: $text;
@@ -84,22 +85,26 @@ body{
     }
     p{
         margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: $text;
     }
     &-img{
-        background-image: url(../imgs/sunglass_cat.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100px;
-        height: 100px;
-        background-size: 100px;
-        border-radius: 50%;
-        margin: 0 auto;
-
+        // border: 1px solid red;
+        img{
+            border: 1px solid yellow;
+            width: 425px;
+            height: 425px;
+            border-radius: 50%;
+        }
     }
     .text{
         background-color: $text;
         color: $neutral3;
         border-radius: 10px;
         padding: 5px 10px;
+    }
+    button{
+        margin-bottom: 30px;
     }
 }
